@@ -108,7 +108,8 @@ header .logo {
 /* cta */
 
 .cta {
-	display: flex;
+    margin-top: -50px;
+    display: flex;
 }
 
 .cta .cta-text {
@@ -205,6 +206,7 @@ footer {
 @media screen and (max-width: 800px) {
     
     header {
+        margin-left: 20px;
         display: flex;
         flex-direction: column-reverse
         
@@ -220,6 +222,15 @@ footer {
 
     .cta img {
         display: none;    
+    }
+
+    .cta {
+        margin-top: -50px;
+        margin-left: 100px;  
+    }
+
+    nav {
+        margin-left: 50px;  
     }
 
   }
