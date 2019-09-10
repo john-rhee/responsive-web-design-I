@@ -98,7 +98,7 @@ header nav a:first-child {
 }
 
 header nav a:last-child {
-  margin-right: 0;
+  margin-right: 65px;
 }
 
 header .logo {
@@ -201,6 +201,10 @@ footer {
   font-size: 14px;
 }
 
+header nav .line {
+    display:none;
+}
+
 /* Media queries 800 */
 
 @media screen and (max-width: 800px) {
@@ -209,8 +213,8 @@ footer {
         
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
+        align-items: center;
+        
         
     }
 
@@ -242,24 +246,27 @@ footer {
 @media screen and (max-width: 500px) {  
     header {
         display: flex;
-        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
-        
         
     }
 
     nav {
-        margin-left: 200px;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 20px;
+        padding: 10px;
+        color:#A9A9A9;
+        padding-left:40px;
     }
 
     header .logo {
-         width: 200px;
-         margin-left: 150px;
-         margin-top: 50px;
-         margin-right: 30px;
-         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
       }
 
     .cta img {
@@ -268,6 +275,43 @@ footer {
 
     .cta {
         margin-top: -50px;
-        margin-left: 50px;  
+    }
+
+
+    header nav .line {
+        display:initial;
+    }
+
+    .main-content .top-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:30px;
+    }
+
+    .main-content .top-content .text-content {
+        width:100%;
+        margin-right: 0;
+        margin-top:20px;
+    }
+
+    .main-content .top-content .text-content h4{
+        width:100%;
+        margin-right: 0;
+       
+    }
+
+    .main-content .bottom-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:30px;
+    }
+
+    .main-content .bottom-content .text-content {
+        width:100%;
+        margin-right: 0;
+        margin-top:20px;
+
     }
 }    
