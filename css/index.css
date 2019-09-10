@@ -120,6 +120,7 @@ header .logo {
   text-align: center;
   padding: 0px 75px;
   flex-direction: column;
+  align-items: center;
   
 }
 
@@ -132,6 +133,7 @@ header .logo {
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
+  width:200px;
 }
 
 .cta .cta-text button:hover {
@@ -280,6 +282,7 @@ header nav .line {
 
     header nav .line {
         display:initial;
+        width: 100%;
     }
 
     .main-content .top-content {
